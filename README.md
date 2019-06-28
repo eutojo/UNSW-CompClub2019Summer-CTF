@@ -17,6 +17,8 @@ python server.py
 ```
 
 ## Configuration File
+When the server first runs, a `settings.ini` file will be automatically created from the `settings.example.ini` skeleton.
+
 ```ini
 [SERVER]
 port = 8000              # Port to listen on
@@ -35,11 +37,17 @@ password = password     # Superuser password
 There is no user account management interface (_yet_).  
 Edit the SQLite entry for the user in the `users` table.  
 
+## Customisation
+
+* To modify the invite page background, replace `site/invite/background.jpg`  
+* For most other page modifications, edit `site/template.html`
+
 ---
+
 ## Credits
 
 ### Server (Python)
-[`Jinja2`](http://jinja.pocoo.org) - _Version 2.10_  
+[`Jinja2`](http://jinja.pocoo.org) - _Version 2.10.1_  
 [`tornado`](//www.tornadoweb.org) - _Version 5.1.1_
 
 ### Website
@@ -52,8 +60,8 @@ Edit the SQLite entry for the user in the `users` table.
 [`Hack`](//sourcefoundry.org/hack) - _Version 3.3.0_  
 
 ### Snippets / Resources
-[`glitch | sketch of three.js`](//ykob.github.io/sketch-threejs/sketch/glitch.html) by yoichi kobayashi  
-`Jinja2 Rendering stub for Tornado` - https://bibhasdn.com/blog/using-jinja2-as-the-template-engine-for-tornado-web-framework/  
+[`glitch - sketch of three.js`](//ykob.github.io/sketch-threejs/sketch/glitch.html) by yoichi kobayashi  
+[`Jinja2 Rendering stub for Tornado`](https://bibhasdn.com/blog/using-jinja2-as-the-template-engine-for-tornado-web-framework/) by Bibhas Debnath  
 [Dotted World Map](//www.deviantart.com/snowfleikun/art/Dots-world-map-179891314) by sNowFleikuN  
 [CSS Scanlines](//codepen.io/meduzen/pen/zxbwRV) by meduzen  
 
